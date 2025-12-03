@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurantes de Frontino</title>
+    <link rel="stylesheet" href="static/estilo.css">
+</head>
+<body>
+    <h1>🍽 Restaurantes de Frontino</h1>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Abre</th>
+            <th>Cierra</th>
+        </tr>
+
+        {% for r in restaurantes %}
+        <tr>
+            <td>{{ r[0] }}</td>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+            <td>{{ r[3] }}</td>
+            <td>{{ r[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/login">Admin</a>
+
+</body>
+</html>

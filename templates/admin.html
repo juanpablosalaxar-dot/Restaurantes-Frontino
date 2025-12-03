@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Admin</title>
+    <link rel="stylesheet" href="static/estilo.css">
+</head>
+<body>
+
+<h2>Registrar Restaurante</h2>
+
+<form action="/registrar" method="POST">
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Dirección:</label>
+    <input type="text" name="direccion" required>
+
+    <label>Teléfono:</label>
+    <input type="text" name="telefono" required>
+
+    <label>Hora de apertura:</label>
+    <input type="time" name="hora_apertura" required>
+
+    <label>Hora de cierre:</label>
+    <input type="time" name="hora_cierre" required>
+
+    <button type="submit">Registrar</button>
+</form>
+
+<br>
+<a href="/logout">Cerrar sesión</a>
+
+</body>
+</html>

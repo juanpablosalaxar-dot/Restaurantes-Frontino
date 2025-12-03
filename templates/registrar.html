@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Restaurante</title>
+    <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+
+<header>
+    <h1>➕ Registrar Restaurante</h1>
+</header>
+
+<section class="contenedor-form">
+    <form method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Dirección:</label>
+        <input type="text" name="direccion" required>
+
+        <label>Teléfono:</label>
+        <input type="text" name="telefono" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+</section>
+
+<a href="/logout" class="logout-btn">Cerrar Sesión</a>
+
+</body>
+</html>
